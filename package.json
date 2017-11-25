@@ -1,0 +1,56 @@
+{
+  "name": "race-tracker",
+  "version": "1.0.0",
+  "description": "timing tracker",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "async": "^2.5.0",
+    "body-parser": "^1.18.2",
+    "bunyan": "^1.8.12",
+    "bunyan-format": "^0.2.1",
+    "chai": "^4.1.2",
+    "config": "1.27.0",
+    "csv-to-array": "^1.0.2",
+    "express": "^4.16.2",
+    "json-read-and-parse-file": "^1.0.1",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "debug": "^3.1.0",
+    "eslint": "^4.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "cover": "rm -rf ./coverage && ./node_modules/istanbul/lib/cli.js cover node_modules/.bin/_mocha -- -R spec",
+    "cover-open": "open coverage/lcov-report/index.html",
+    "cover-report": "npm run cover; npm run cover-open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pingauyeung/race-tracker.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Ping Au-Yeung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pingauyeung/race-tracker/issues"
+  },
+  "homepage": "https://github.com/pingauyeung/race-tracker#readme"
+}
